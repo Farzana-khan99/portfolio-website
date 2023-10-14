@@ -1,0 +1,346 @@
+
+:root{
+    --pnik:#f2135f;
+    --black:#000;
+    --lightBlue:#17356f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p,
+span {
+  font-family: "Josefin Sans", sans-serif;
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+
+}
+/* HEADER SECTION START */
+.hero  {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-image: url(../images/women-img1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 11;
+}
+.hero::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    top: 0;
+    background: #0000009e;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-transform: capitalize;
+}
+.logo {
+    font-weight: 800;
+    font-size: 28px;
+    color: var(--black);
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.logo span {
+    color: var(--pnik);
+}
+.navigation_list {
+    display: flex;
+}
+.navigation_list li {
+    transition:  .4s;
+    padding-right: 24px;
+}
+.navigation_list li a:hover{
+    color: var(--pnik);
+}
+.navigation_list li a{
+    color: #fff;
+    font-weight: 600;
+}
+.btn {
+    text-transform: capitalize;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: var(--black);
+    color: #fff;
+    transition: transform .4s;
+}
+.btn:hover {
+    transform: scale(1.2);
+}
+.hero_content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+.hero_content h4{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.hero_content h1{
+    text-transform: capitalize;
+    font-size: 45px;
+    margin-bottom: 8px;
+}
+.hero_content h1 >span{
+    color: var(--pnik);
+}
+.hero_content h3{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.news_letter form {
+    margin-top: 20px;
+    position: relative;
+}
+.news_letter form  input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 2px solid var(--pnik);
+    border-radius: 20px;
+    font-size: 16px;
+    background: #d6d6d8;
+}
+.news_letter form  input:last-child{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+    background: var(--pnik);
+    padding: 10px 20px;
+    outline: none;
+    border: 2px solid var(--pnik);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+.news_letter form  input:last-child:hover{
+    background: transparent;
+    color: var(--pnik);
+    border-color: var(--pnik);
+}
+/* HEADER SECTION END */
+
+/* ABOUT SECTION START */
+.about_sec .about_content{
+    display: flex;
+    gap: 6px;
+    justify-content: space-between;
+}
+.about_info h2{
+    text-transform: capitalize;
+    color: var(--pnik);
+    font-size: 35px;
+    line-height: 50px;
+} 
+.about_info h4{
+    color: rgb(10, 54, 138);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.about_info {
+    max-width: 500px;
+}
+.about_info p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 20px;
+    color: #000;
+}
+.about-img{
+    max-width: 600px;
+}  
+
+.about-img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about_sec {
+    padding: 4% 0;
+}
+/* ABOUT SECTION END */
+
+/* SERVICES SECTION START */
+.services_sec {
+    padding: 6% 0;
+}
+.title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.title h2{
+    text-transform: capitalize;
+    color: var(--pnik);
+    font-size: 35px;
+    line-height: 50px;
+} 
+.box {
+    display: flex;
+    justify-content: center;
+    gap:  25px;
+}
+.card {
+    border-radius: 10px;
+    text-align: center;
+    background: #eff1f5;
+    padding: 25px  20px;
+
+}
+.read_btn{
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    background: var(--pnik);
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid var(--pnik);
+    border-radius: 20px;
+    transition: .4s;
+}
+.read_btn:hover{
+    background: transparent;
+    color: var(--pnik);
+    border-color: var(--pnik);
+}
+.card  >i{
+    color: var(--pnik);
+    font-size: 29px;
+    padding-bottom: 10px;
+}
+.card h5{
+    font-size: 20px;
+    color: rgb(10, 54, 138);
+    text-transform: capitalize;
+    margin-bottom: 10px;  
+}
+.servies_content p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 22px;
+    color: #000; 
+    margin-bottom: 15px; 
+    
+}
+/* SERVICES SECTION  END */
+
+/* <!-- CONTACT US START --> */
+.contact_me{
+    background: #080808e8;
+    padding: 4% 0;
+    text-align: center;
+}
+.contact_me p{
+  padding: 20px 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    line-height: 22px;
+    color: #fff;  
+
+}
+/* <!-- CONTACT US  END --> */
+
+/* FOOTER US START */
+.footer  {
+    background: #000;
+    padding: 5% 0;
+}
+
+.footer_info {
+   
+    text-align: center;
+    color: #fff;
+}
+.footer_info p:nth-child(2){
+    margin: 0 auto;
+    width: 30%;
+    line-height: 25px;
+}
+.footer_info  h4{
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;  
+}
+.social_link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_link  li {
+    margin-left:15px ;
+    width: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    height: 20px;
+    border:  2px solid var(--pnik);
+    background: var(--pnik);
+    border-radius: 100px;
+    transition: .4s;
+}
+.social_link  li:hover{
+    background: transparent;
+    color: var(--pnik);
+    border-color: var(--pnik);  
+}
+.social_link  li a{
+    color: #fff;
+    font-size: 15px;
+}
+
+.copy_right {
+    background: #000;
+   border-top: 1px solid #161616;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 0;
+color: var(--pnik);
+}
+/* FOOTER US  END */
